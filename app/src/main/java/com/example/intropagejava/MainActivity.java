@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         list.add(new ScreenItem("Lorem Ipsum", "Lorem Ipsum is simply dummy text of the printing and typesetting\nindustry. Lorem Ipsum has been the industry's", R.raw.second));
         list.add(new ScreenItem("Lorem Ipsum", "Lorem Ipsum is simply dummy text of the printing and typesetting\nindustry. Lorem Ipsum has been the industry's", R.raw.three));
 
+
         viewPager = findViewById(R.id.screen_viewpager);
         adapter = new IntroViewPagerAdapter(this, list);
 
