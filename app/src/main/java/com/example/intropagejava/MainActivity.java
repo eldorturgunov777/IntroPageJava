@@ -36,12 +36,13 @@ public class MainActivity extends AppCompatActivity {
         tabIndicator = findViewById(R.id.tab_indicator);
 
         final List<ScreenItem> list = new ArrayList<>();
-        list.add(new ScreenItem("Lorem Ipsum", "Lorem Ipsum is simply dummy text of the printing and typesetting\nindustry. Lorem Ipsum has been the industry's", R.drawable.agreement));
-        list.add(new ScreenItem("Lorem Ipsum", "Lorem Ipsum is simply dummy text of the printing and typesetting\nindustry. Lorem Ipsum has been the industry's", R.drawable.document));
-        list.add(new ScreenItem("Lorem Ipsum", "Lorem Ipsum is simply dummy text of the printing and typesetting\nindustry. Lorem Ipsum has been the industry's", R.drawable.startup));
+        list.add(new ScreenItem("Lorem Ipsum", "Lorem Ipsum is simply dummy text of the printing and typesetting\nindustry. Lorem Ipsum has been the industry's", R.raw.first));
+        list.add(new ScreenItem("Lorem Ipsum", "Lorem Ipsum is simply dummy text of the printing and typesetting\nindustry. Lorem Ipsum has been the industry's", R.raw.second));
+        list.add(new ScreenItem("Lorem Ipsum", "Lorem Ipsum is simply dummy text of the printing and typesetting\nindustry. Lorem Ipsum has been the industry's", R.raw.three));
 
         viewPager = findViewById(R.id.screen_viewpager);
         adapter = new IntroViewPagerAdapter(this, list);
+
         viewPager.setAdapter(adapter);
 
         tabIndicator.setupWithViewPager(viewPager);
