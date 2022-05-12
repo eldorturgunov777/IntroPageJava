@@ -57,8 +57,6 @@ public class MainActivity extends AppCompatActivity {
                     loadLastScreen();
                 }
             }
-
-
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
             }
