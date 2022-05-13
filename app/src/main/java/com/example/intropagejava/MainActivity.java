@@ -76,5 +76,6 @@ public class MainActivity extends AppCompatActivity {
     private void loadLastScreen() {
         btnSkip.setVisibility(View.INVISIBLE);
         btnGetStarted.setVisibility(View.VISIBLE);
+
     }
 }
